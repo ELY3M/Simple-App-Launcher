@@ -29,8 +29,8 @@ jobs:
       - name: current dir
         run: | 
             pwd
-            ls -la app/build/outputs/apk/fdroid
-            ls -la app/build/outputs/apk/prepaid    
+            ls -la app/build/outputs/apk/fdroid/release
+            ls -la app/build/outputs/apk/prepaid/release  
             
       - name: Setup build tool version variable
         shell: bash
@@ -43,7 +43,7 @@ jobs:
         uses: r0adkll/sign-android-release@v1
         id: sign_app
         with:
-          releaseDirectory: app/build/outputs/apk/release/
+          releaseDirectory: app/build/outputs/apk/fdroid/release/
           signingKeyBase64: ${{ secrets.KEY }}
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.PASSWORD }}

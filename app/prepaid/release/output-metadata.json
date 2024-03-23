@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.simplemobiletools.applauncher",
+  "variantName": "prepaidRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 53,
+      "versionName": "5.11.4",
+      "outputFile": "app-launcher-prepaid-release.apk"
+    }
+  ],
+  "elementType": "File"
+}
